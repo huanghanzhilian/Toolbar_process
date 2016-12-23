@@ -1,0 +1,9 @@
+
+//_tool.scss
+.div{
+	@include opacity(1);
+}
+.div1{
+	height: $toolbar-size;
+}
+

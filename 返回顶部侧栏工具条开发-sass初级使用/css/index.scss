@@ -1,0 +1,80 @@
+
+// index.scss
+body{
+	font-family: "微软雅黑";
+}
+$toolbar-size:52px;
+.toolbar{
+	position: fixed;
+	left: 50%;
+	bottom: 5px;
+	margin-left: -$toolbar-size/2;
+}
+.toolbar-iten{
+	position: relative;
+	display: block;
+	width: $toolbar-size;
+	height: $toolbar-size;
+	background-image: url(../img/toolbar.png);
+	background-repeat: no-repeat;
+	margin-top: 1px;
+	-webkit-transition: background-position 1s;
+	-moz-transition: background-position 1s;
+	-ms-transition: background-position 1s;
+	-o-transition: background-position 1s;
+	transition: background-position 1s;
+
+	&:hover{
+		.toolbar-layer{
+			opacity: 1;
+			filter:alpha(opacity=100);
+			transform: scale(1);
+		}
+	}
+}
+.toolbar-iten-weixin{
+	background-position: 0 -798px;
+	&:hover{
+		background-position: 0 -860px;
+	}
+	.toolbar-layer{
+		height: 212px;
+		background-position: 0 0;
+	}
+}
+.toolbar-iten-feedback{
+	background-position: 0 -426px;
+	&:hover{
+		background-position: 0 -488px;
+	}
+}
+.toolbar-iten-app{
+	background-position: 0 -550px;
+	&:hover{
+		background-position: 0 -612px;
+	}
+	.toolbar-layer{
+		height: 194px;
+		background-position: 0 -222px;
+	}
+}
+.toolbar-iten-top{
+	background-position: 0 -674px;
+	&:hover{
+		background-position: 0 -736px;
+	}
+}
+.toolbar-layer{
+	position: absolute;
+	right: $toolbar-size - 6;
+	bottom: 0;
+	width: 172px;
+	background-image: url(../img/toolbar.png);
+	background-repeat: no-repeat;
+	opacity: 0;
+	filter:alpha(opacity=0);
+	transform-origin: 95% bottom;
+	transform: scale(0.01);
+	transition: all 1s;
+}
+

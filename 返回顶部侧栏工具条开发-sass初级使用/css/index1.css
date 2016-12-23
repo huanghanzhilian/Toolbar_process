@@ -1,0 +1,15 @@
+@charset "UTF-8";
+body {
+  font-family: "微软雅黑";
+}
+
+.div {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.div1 {
+  height: 52px;
+}
+
+/*# sourceMappingURL=index1.css.map */
