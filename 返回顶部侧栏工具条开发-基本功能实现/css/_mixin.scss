@@ -1,0 +1,12 @@
+//mixin
+$toolbar-size:52px;
+@mixin toolbar-item($pos,$hoverPos){
+	background-position: 0 $pos;
+	&:hover{
+		background-position: 0 $hoverPos;
+	}
+}
+@mixin opacity($opacity){
+	opacity: $opacity;
+	filter: alpha(opacity = $opacity * 100);
+}
